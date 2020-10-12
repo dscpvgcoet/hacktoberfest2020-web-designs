@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+/*====================== design Scrollbar============================================== */
+::-webkit-scrollbar {
+  background-color: black;
+  width: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-radius: 10px;
+}
+
+/*========================== Setting images in background=================================== */
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pimg1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("../img/image1.jpg");
+  height: 100vh;
+}
+.pimg2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/image2.jpg");
+  height: 30vh;
+}
+.pimg3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/image3.jpg");
+  height: 60vh;
+}
+
+/*=================== Text on image background ======================= */
+.border {
+  font-style: italic;
+  padding: 2px 5px;
+  border-radius: 8px;
+  font-weight: 100px;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Sansita Swashed", cursive;
+}
+
+/*==========================================text section without image background ================================*/
+.section {
+  text-align: center;
+  padding: 37px 0px;
+}
