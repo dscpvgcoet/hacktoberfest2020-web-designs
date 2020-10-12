@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --clr-background: #222;
+  --clr-primary: #eee;
+  --clr-secondary: #2ec1ac;
+  --primary-shadow: -4px -4px 10px rgba(255, 255, 255, 0.05),
+    4px 4px 10px rgba(0, 0, 0, 0.5);
+  --secondary-shadow: -3px -3px 5px rgba(255, 255, 255, 0.05),
+    3px 3px 5px rgba(0, 0, 0, 0.5);
+  --inset-shadow: inset -3px -3px 5px rgba(255, 255, 255, 0.05),
+    inset 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-background);
+  font-family: "Century Gothic";
+}
+
+a {
+  text-decoration: none;
+}
+
+#wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin: 10px 10px; */
+}
+
+#left, #right {
+  width: 320px;
+  padding: 20px;
+  margin: 10px 10px;
+  box-shadow: var(--primary-shadow);
+  position: relative;
+  border-radius: 20px;
+}
+
+#right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#right h1 {
+  font-size: 40px;
+  color: white;
+}
+
+.logo {
+  color: var(--clr-primary);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.logo img {
+  width: 280px;
+}
+
+form label {
+  display: block;
+  color: var(--clr-secondary);
+}
+
+.text-input {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: var(--inset-shadow);
+  color: var(--clr-secondary);
+}
+
+.primary-btn {
+  display: block;
+  margin: 20px auto;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--clr-primary);
+  padding: 12px 60px;
+  box-shadow: var(--secondary-shadow);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.primary-btn:active {
+  box-shadow: var(--inset-shadow);
+}
+
+.links a {
+  display: block;
+  color: var(--clr-primary);
+  text-align: center;
+  text-transform: capitalize;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.or {
+  text-align: center;
+  color: #7a7a7a;
+}
+
+.bar {
+  display: none;
+}
+
+footer p {
+  color: #7a7a7a;
+}
+
+footer a {
+  color: #fff;
+}
+
+.secondary-btn {
+  display: block;
+  margin: 20px auto;
+  border: none;
+  text-align: center;
+  outline: none;
+  background-color: transparent;
+  color: var(--clr-secondary);
+  padding: 12px 50px;
+  box-shadow: var(--secondary-shadow);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
