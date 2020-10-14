@@ -1,0 +1,133 @@
+/*Basic Settings*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body,
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato','Arial',sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden; 
+}
+
+section {
+	padding: 80px 0;
+}
+
+
+/*First section*/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/cover1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.content {
+	padding-top: 20px; 
+}
+.content img {
+
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.logo {
+	height: 250px;
+	width: 250px;
+	text-align: center;
+	
+}
+.title, .text{
+	color: #F0740E;
+	text-align: center;
+	padding: 10px;
+}
+.title {
+	font-size: 32px;
+}
+.text{
+	font-size: 28px;
+}
+.center {
+	margin: 0 auto;
+	text-align: center;
+}
+/*Second Section*/
+.services {
+	font-size: 110%;
+
+}
+.grid-3 div{
+	width: 33.26%;
+	text-align: center;
+	float: left;
+	padding: 20px 0;
+	border-right: 1px solid #f1740e;
+}
+
+.grid-3 div:last-child {
+	border-right: none;
+}
+.grid-3 {
+	
+	padding-bottom: 200px;
+}
+.fab {
+	color: #e52d27 ;
+}
+.fa-chalkboard-teacher {
+	color: #548C5B;
+}
+.fa-briefcase {
+	color: #8B4513;
+}
+
+.services p {
+	color: #0b374d;
+}
+
+
+/*About Section*/
+.about {
+	margin-top: 20px;
+	clear: both;
+	background-color: #044646; 
+	color: #f1740e;
+}
+.about h3 {
+	text-align: center;
+	padding: 10px;
+	font-size: 28px;
+	color: #fff;
+}
+.about p {
+	padding: 0 5%;
+	text-align: center;
+}
+
+
+
+/*Footer*/
+footer {
+	text-align: center;
+	padding: 20px;
+	color: #fff;
+	background-color: #555555;
+}
+
+/*Query*/
+@media only screen and (max-width: 480px) {
+
+.grid-3 div{
+width: 100%;
+border-right: none; 
+}
+
+}
