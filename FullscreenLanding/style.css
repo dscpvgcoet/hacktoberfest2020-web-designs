@@ -1,0 +1,114 @@
+/*Basic Settings*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 80px 0;
+}
+
+/*
+background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/3.jpg");
+background-size: cover;
+background-position: center;
+height: 100vh;
+background-attachment: fixed;
+*/
+/* Home-Screen */
+#showcase {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22)), url("images/1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+  text-align: center
+}
+
+#showcase h1 {
+  padding-top: 16%;
+  font-size: 60px;
+  color: #fff;
+}
+
+#showcase p {
+  font-size: 42px;
+  color: rgb(206, 254, 89);
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  width: 150px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(17, 31, 47);
+  color: white;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.button:hover {
+  color: rgb(17, 31, 47);
+  background-color: white;
+  transition: 1s;
+}
+
+#section-a {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+#section-b {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/4.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+#section-b p, #section-a p {
+  padding: 5%;
+}
+
+#section-c {}
+
+.box-1, .box-2, .box-3 {
+  width: 33.26%;
+  text-align: center;
+  float: left;
+  padding: 20px 10px;
+  border-right: 1px solid #f1740e;
+}
+
+.box-3 {
+  border-right: none;
+}
+
+/*Query*/
+@media only screen and (max-width: 480px) {
+  .box-1, .box-2, .box-3 {
+    width: 100%;
+    border-right: none;
+  }
+}
