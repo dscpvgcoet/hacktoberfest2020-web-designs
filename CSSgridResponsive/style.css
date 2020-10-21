@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&display=swap');
+
+/*Basic Settings*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+section {
+  clear: both;
+  padding: 80px 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* showcase */
+#showcase {
+  background-image: url("images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.content-wrap {
+  padding: 5%;
+  text-align: center;
+}
+
+#showcase h1 {
+  padding-top: 20%;
+  font-size: 44px;
+  font-weight: 900;
+}
+
+#showcase p {
+  font-size: 30px;
+}
+
+.btn {
+  display: block;
+  margin: 5px auto;
+  padding: 10px;
+  background-color: #b35c0c;
+  width: 150px;
+  color: #fff;
+  border-radius: 15px;
+}
+
+/* Section background */
+#section-a {
+  background-color: #c4c4c4;
+}
+
+#section-c {
+  background-color: #434e45;
+  color: #fff;
+}
+
+/* Grid Settings */
+.card {
+  text-align: center;
+  width: 30.2%;
+  padding: 10px;
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+
+.box {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+  width: 48.2%;
+  padding: 30px;
+}
+
+/* Footer */
+#main-footer {
+  clear: both;
+  padding: 20px;
+  background-color: #424242;
+  color: #fff;
+  text-align: center;
+}
+
+#main-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Query */
+@media only screen and (max-width: 480px) {
+  .box {
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
