@@ -1,0 +1,172 @@
+/*Basic Settings*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section {
+  padding: 80px 0;
+}
+
+#branding {
+  float: left;
+  color: #fff;
+  color: #e67e22;
+  padding: 10px;
+}
+
+nav {
+  float: right;
+}
+
+nav li {
+  display: block;
+  padding: 15px;
+  float: left;
+}
+
+nav a {
+  color: #e67e22;
+}
+
+/*
+ showcase
+*/
+#showcase {
+  background-image: url("./images/showcase.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+}
+
+#showcase h1 {
+  font-size: 48px;
+  padding-top: 18%
+}
+
+#showcase p {
+  padding: 2%;
+  font-size: 28px;
+}
+
+#newsletter, .quote {
+  text-align: center;
+}
+
+#newsletter h1 {
+  font-size: 48px;
+  padding: 20px;
+}
+
+#newsletter input, .quote input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+#newsletter button, .button_1 {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 200px;
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+}
+
+.box {
+  text-align: center;
+  width: 31.2%;
+  padding: 10px;
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+
+#main-col {
+  height: 80vh;
+  color: black;
+  background-color: #b9b9b9;
+}
+
+#main-col .page-title, .dark h3 {
+  text-align: center;
+  display: block;
+  font-size: 46px;
+}
+
+#main-col .page-title, .dark h3 {
+  padding-top: 5%;
+  text-decoration: underline #e67e22;
+}
+
+#main-col p, .dark p {
+  padding: 5%;
+}
+
+.dark p {
+  text-align: center;
+}
+
+#services li {
+  text-align: center;
+  width: 31.2%;
+  padding: 20px;
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+  border: 1px solid #ff7222;
+}
+
+.quote {
+  padding-top: 5%;
+}
+
+.quote div {
+  width: 100%;
+}
+
+.quote div textarea {
+  width: 60%;
+  padding: 20px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+  clear: both;
+  text-align: center;
+  padding: 20px;
+  background-color: #333333;
+  color: white;
+}
+
+/* Query */
+@media only screen and (max-width: 480px) {
+  .box, #services li {
+    width: 100%;
+  }
+}
